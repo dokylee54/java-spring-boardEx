@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74595d9f-d9a5-420e-bb25-8bb2f9592c24" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YIF75inBTjo1V6818bj0YoXZn7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.235" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.springbook.biz.user" />
+      <recent name="com.springbook.biz" />
+      <recent name="com.springbook.biz.board" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.springbook.biz.board" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BoardServiceClient">
+    <configuration name="BoardServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.springbook.biz.board.BoardServiceClient" />
+      <module name="day1_ex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbook.biz.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.springbook.biz.user.UserServiceClient" />
+      <module name="day1_ex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbook.biz.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BoardServiceClient" />
+        <item itemvalue="Application.UserServiceClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74595d9f-d9a5-420e-bb25-8bb2f9592c24" name="Default Changelist" comment="" />
+      <created>1582622030849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582622030849</updated>
+      <workItem from="1582622032177" duration="30988000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="209" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582737717954">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="458" y="209" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.828@0.23.1440.828" timestamp="1582737717954" />
+    <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1582790535768">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.827@0.23.1440.827" timestamp="1582790535768" />
+    <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1582645876495" />
+    <state x="458" y="218" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1582642310550">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="458" y="218" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1440.828@0.23.1440.828" timestamp="1582642310550" />
+    <state x="340" y="132" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582622062092">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="340" y="132" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.827@0.23.1440.827" timestamp="1582622062092" />
+    <state x="494" y="302" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582644833596">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="494" y="302" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.828@0.23.1440.828" timestamp="1582644833596" />
+    <state x="100" y="123" width="1240" height="626" key="DiffContextDialog" timestamp="1582790023120">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="100" y="123" width="1240" height="626" key="DiffContextDialog/0.23.1440.827@0.23.1440.827" timestamp="1582790023120" />
+    <state width="1398" height="183" key="GridCell.Tab.0.bottom" timestamp="1582791868813">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1582791868813" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1582738288517" />
+    <state width="1398" height="183" key="GridCell.Tab.0.center" timestamp="1582791868813">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1582791868813" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1582738288516" />
+    <state width="1398" height="183" key="GridCell.Tab.0.left" timestamp="1582791868812">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1582791868812" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1582738288516" />
+    <state width="1398" height="183" key="GridCell.Tab.0.right" timestamp="1582791868813">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1582791868813" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1582738288517" />
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1582646329261">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1582646329261" />
+    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1582646329260">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1582646329260" />
+    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1582646329260">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1582646329260" />
+    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1582646329261">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1582646329261" />
+    <state x="208" y="23" width="1024" height="826" key="SettingsEditor" timestamp="1582647750841">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="208" y="23" width="1024" height="826" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1582627706123" />
+    <state x="208" y="23" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1582647750841" />
+    <state x="647" y="220" key="chooseDestDirectoryDialog" timestamp="1582642307229">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="647" y="220" key="chooseDestDirectoryDialog/0.23.1440.828@0.23.1440.828" timestamp="1582642307229" />
+    <state x="369" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582627659678">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="369" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.826@0.23.1440.826" timestamp="1582627659678" />
+    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1582790442690">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1582790442690" />
+    <state x="385" y="174" width="670" height="677" key="search.everywhere.popup/0.23.1440.828@0.23.1440.828" timestamp="1582647740874" />
+  </component>
+</project>
