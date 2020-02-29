@@ -17,9 +17,9 @@
 <body>
 <center>
     <h1>글 등록</h1>
-    <a href="logout_proc.jsp">Log-out</a>
+    <a href="logout.do">Log-out</a>
     <hr>
-    <form action="insertBoard_proc.jsp" method="post">
+    <form action="insertBoard.do" method="post">
         <table border="1" cellpadding="0" cellspacing="0">
             <tr>
                 <td bgcolor="orange" width="70">제목</td>
@@ -46,7 +46,7 @@
             </tr>
         </table>
     </form>
-    <a href="getBoardList.jsp">글 목록 가기</a>
+    <a href="getBoardList.do">글 목록 가기</a>
 </center>
 </body>
 </html>

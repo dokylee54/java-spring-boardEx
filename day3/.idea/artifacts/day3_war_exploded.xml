@@ -15,6 +15,10 @@
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.5" />
           <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
           <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+          <element id="library" level="project" name="Maven: org.apache.taglibs:taglibs-standard-impl:1.2.5" />
         </element>
       </element>
     </root>
