@@ -2,36 +2,35 @@ package com.springbook.view.user;
 
 import com.springbook.biz.user.UserVO;
 import com.springbook.biz.user.impl.UserDAO;
-import com.springbook.view.controller.Controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-public class LoginController implements Controller {
-    public String handleRequest(HttpServletRequest request, HttpServletResponse response) {
+import javax.servlet.http.HttpSession;
+
+@Controller
+public class LoginController {
+
+    @RequestMapping(value = "/login.do", method = RequestMethod.GET)
+    public String loginView(@ModelAttribute("user") UserVO vo) {
+        System.out.println("로그인 화면으로 이동");
+
+        vo.setId("admin");
+        vo.setPassword("1234");
+        return "login.jsp";
+    }
+
+    @RequestMapping(value = "/login.do", method = RequestMethod.POST)
+    public String login(UserVO vo, UserDAO userDAO, HttpSession session) {
         System.out.println("로그인 처리");
 
-        // 1. 사용자 입력 정보 추출
-        String id = request.getParameter("id");
-        String password = request.getParameter("password");
-
-        // 2. DB 연동 처리
-        UserVO vo = new UserVO();
-        vo.setId(id);
-        vo.setPassword(password);
-
-        UserDAO userDAO = new UserDAO();
         UserVO user = userDAO.getUser(vo);
-
-        // 3. 화면 네비게이션
         if(user != null) {
-            System.out.println("로그인 성공");
+            session.setAttribute("userName", user.getName());
             return "getBoardList.do";
         }
-
-        else {
-            System.out.println("로그인 실패");
-            return "login";
-        }
+        else return "login.jsp";
     }
 }
