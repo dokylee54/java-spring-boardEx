@@ -3,6 +3,7 @@ package com.springbook.view.user;
 import com.springbook.biz.user.UserVO;
 import com.springbook.biz.user.impl.UserDAO;
 
+import com.springbook.biz.user.impl.UserDAOSpring;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
