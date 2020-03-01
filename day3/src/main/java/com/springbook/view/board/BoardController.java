@@ -1,17 +1,19 @@
 package com.springbook.view.board;
 
+import com.springbook.biz.board.BoardListVO;
 import com.springbook.biz.board.BoardService;
 import com.springbook.biz.board.BoardVO;
 import com.springbook.biz.board.impl.BoardDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -19,6 +21,17 @@ import java.util.Map;
 public class BoardController {
     @Autowired
     private BoardService boardService;
+
+    @RequestMapping("/dataTransform.do")
+    @ResponseBody
+    public BoardListVO dataTransform(BoardVO vo) {
+        vo.setSearchCondition("TITLE");
+        vo.setSearchKeyword("");
+        List<BoardVO> boardList = boardService.getBoardList(vo);
+        BoardListVO boardListVO = new BoardListVO();
+        boardListVO.setBoardList(boardList);
+        return boardListVO;
+    }
 
 
     // 검색 조건 목록 설정
@@ -32,8 +45,14 @@ public class BoardController {
 
     // 글 등록
     @RequestMapping(value = "/insertBoard.do")
-    public String insertBoard(BoardVO vo) {
+    public String insertBoard(BoardVO vo) throws IOException {
         System.out.println("글 등록 처리");
+
+        MultipartFile uploadFile = vo.getUploadFile();
+        if(!uploadFile.isEmpty()) {
+            String fileName = uploadFile.getOriginalFilename();
+            uploadFile.transferTo(new File("/Users/dokylee/Desktop/java_proj/upload-imgs/"+fileName));
+        }
 
         boardService.insertBoard(vo);
 //        return "getBoardList.do"; // 포워딩 방식: 브라우저의 URL 변하지 않음 => "/insertBoard.do" 그대로
