@@ -8,7 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <%--<%--%>
 <%--   BoardVO board = (BoardVO) session.getAttribute("board");--%>
@@ -45,7 +45,7 @@
             </tr>
             <tr>
                 <td bgcolor="orange">등록일</td>
-                <td align="left">${board.regDate}</td>
+                <td align="left"><fmt:formatDate value="${board.regDate}" pattern="yyyy-MM-dd" /></td>
             </tr>
             <tr>
                 <td bgcolor="orange">조회수</td>
