@@ -29,14 +29,28 @@
         <property name="password" value="${jdbc.password}" />
     </bean>
 
-    <!-- Transaction 설정 -->
-    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
+    <!-- spring과 JPA 연동 설정 -->
+    <bean id="jpaVendorAdaptor" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"></bean>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdaptor"></property>
+        <property name="packagesToScan" value="com.springbook.biz.board"></property>
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.use_sql_comments">true</prop>
+                <prop key="hibernate.id.new_generator_mappings">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">create</prop>
+            </props>
+        </property>
     </bean>
 
-    <!-- Spring JDBC 설정 -->
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="dataSource" />
+    <!-- Transaction 설정 -->
+    <bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
 
     <tx:advice id="txAdvice" transaction-manager="txManager">
@@ -46,10 +60,16 @@
         </tx:attributes>
     </tx:advice>
 
-    <aop:config>
-        <aop:pointcut id="txPointcut" expression="execution(* com.springbook.biz..*(..))" />
 
-        <aop:advisor pointcut-ref="txPointcut" advice-ref="txAdvice" />
+    <!-- Spring JDBC 설정 -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <aop:config>
+        <aop:pointcut id="allPointcut" expression="execution(* com.springbook.biz..*Impl.*(..))" />
+
+        <aop:advisor pointcut-ref="allPointcut" advice-ref="txAdvice" />
     </aop:config>
 
     <!-- Spring과 Mybatis 연동 설정 -->

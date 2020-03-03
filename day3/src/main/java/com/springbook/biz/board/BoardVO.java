@@ -3,6 +3,7 @@ package com.springbook.biz.board;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -10,19 +11,27 @@ import javax.xml.bind.annotation.XmlTransient;
 import java.util.Date;
 
 // VO(Value Object)
+@Entity
+@Table(name = "BOARD")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class BoardVO {
+    @Id
+    @GeneratedValue
     @XmlAttribute   // seq를 속성으로 표현하라는 의미
     private int seq;
     private String title;
     private String writer;
     private String content;
+    @Temporal(TemporalType.DATE)
     private Date regDate;
     private int cnt;
+    @Transient
     @XmlTransient
     private String searchCondition;
+    @Transient
     @XmlTransient
     private String searchKeyword;
+    @Transient
     @XmlTransient
     private MultipartFile uploadFile;
 

@@ -10,7 +10,7 @@ import java.util.List;
 @Service("boardService")
 public class BoardServiceImpl implements BoardService {
     @Autowired
-    private BoardDAOMybatis boardDAO;
+    private BoardDAOJPA boardDAO;
 
     public void insertBoard(BoardVO vo) {
 //        System.out.println(vo.getSeq());
